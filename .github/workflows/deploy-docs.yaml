@@ -10,10 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - name: Check build artifact
-        run: ls -al docs/.vitepress/dist
-
+      
       - name: Install Wrangler
         run: npm install -g wrangler
 
