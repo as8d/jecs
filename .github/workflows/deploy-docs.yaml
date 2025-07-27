@@ -15,7 +15,7 @@ jobs:
         run: npm install -g wrangler
 
       - name: Publish to Cloudflare Workers
-        run: wrangler publish --site-bucket ./docs/.vitepress/dist
+        run: wrangler deploy
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
